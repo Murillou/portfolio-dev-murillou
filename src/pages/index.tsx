@@ -1,6 +1,7 @@
 import { AboutMe } from '@/components/AboutMe/AboutMe';
 import { Header } from '@/components/Header/Header';
 import { Profile } from '@/components/Profile/Profile';
+import { Projects } from '@/components/Projects/Projects';
 import { TechStack } from '@/components/TechStack/TechStack';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { useEffect, useState } from 'react';
@@ -37,6 +38,7 @@ export default function Home() {
       <Profile />
       <AboutMe />
       <TechStack />
+      <Projects />
 
       {showScrollButton && (
         <button

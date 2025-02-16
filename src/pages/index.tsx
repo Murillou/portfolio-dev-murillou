@@ -1,3 +1,4 @@
+import { AboutMe } from '@/components/AboutMe/AboutMe';
 import { Header } from '@/components/Header/Header';
 import { Profile } from '@/components/Profile/Profile';
 import { ThemeProvider } from '@/context/ThemeContext';
@@ -33,6 +34,7 @@ export default function Home() {
     <ThemeProvider>
       <Header scrollToSection={scrollToSection} />
       <Profile />
+      <AboutMe />
 
       {showScrollButton && (
         <button

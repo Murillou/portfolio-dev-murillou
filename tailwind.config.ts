@@ -12,6 +12,9 @@ export default {
         'gray-text': '#E9E9E8',
         'gray-opacity': '#A4A3A3',
       },
+      screens: {
+        xs: '520px',
+      },
     },
   },
   plugins: [],

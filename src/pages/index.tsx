@@ -1,6 +1,7 @@
 import { AboutMe } from '@/components/AboutMe/AboutMe';
 import { Header } from '@/components/Header/Header';
 import { Profile } from '@/components/Profile/Profile';
+import { TechStack } from '@/components/TechStack/TechStack';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { useEffect, useState } from 'react';
 
@@ -35,6 +36,7 @@ export default function Home() {
       <Header scrollToSection={scrollToSection} />
       <Profile />
       <AboutMe />
+      <TechStack />
 
       {showScrollButton && (
         <button

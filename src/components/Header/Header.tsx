@@ -92,7 +92,7 @@ export function Header({ scrollToSection }: HeaderProps) {
                   : 'hover:text-blue-500'
               }`}
             >
-              <a onClick={() => scrollToSection('skills')}>Skills</a>
+              <a onClick={() => scrollToSection('skills')}>Tech Stack</a>
             </li>
             <li
               className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 ${

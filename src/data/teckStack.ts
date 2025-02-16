@@ -1,9 +1,9 @@
 import { SiTypescript, SiTailwindcss, SiVim } from 'react-icons/si';
-import { FaReact, FaBootstrap } from 'react-icons/fa';
+import { FaReact, FaBootstrap, FaLinux } from 'react-icons/fa';
 import { MdHtml, MdCss } from 'react-icons/md';
 import { FaNode, FaSass, FaGitAlt } from 'react-icons/fa6';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
-import { SiStyledcomponents, SiNextdotjs } from 'react-icons/si';
+import { SiStyledcomponents, SiNextdotjs, SiInsomnia } from 'react-icons/si';
 
 export const techStack = [
   { icon: SiNextdotjs, color: 'text-slate-500', name: 'Next.js' },
@@ -23,4 +23,6 @@ export const techStack = [
   { icon: FaSass, color: 'text-pink-400', name: 'Sass' },
   { icon: AiOutlineConsoleSql, color: 'text-orange-400', name: 'SQL' },
   { icon: SiVim, color: 'text-slate-400', name: 'Vim' },
+  { icon: SiInsomnia, color: 'text-slate-700', name: 'Insomnia' },
+  { icon: FaLinux, color: 'text-slate-950', name: 'Linux' },
 ];

@@ -1,4 +1,5 @@
 import { Header } from '@/components/Header/Header';
+import { Profile } from '@/components/Profile/Profile';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { useEffect, useState } from 'react';
 
@@ -31,6 +32,7 @@ export default function Home() {
   return (
     <ThemeProvider>
       <Header scrollToSection={scrollToSection} />
+      <Profile />
 
       {showScrollButton && (
         <button

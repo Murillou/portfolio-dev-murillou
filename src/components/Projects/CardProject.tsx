@@ -24,7 +24,7 @@ export function CardProject({
 
   return (
     <section
-      className={`w-[512px] mx-auto overflow-hidden rounded-lg shadow-md ${
+      className={`max-w-[512px] w-full xs:w-[512px] mx-auto overflow-hidden rounded-lg shadow-md ${
         theme === 'dark'
           ? 'bg-gradient-to-br from-green-500 to-purple-400'
           : 'bg-gradient-to-br from-green-300 to-blue-400'

@@ -94,6 +94,7 @@ const config: Config = {
     '^@/(.*)$': '<rootDir>/src/$1',
     '\\.css$': 'identity-obj-proxy',
     '^aos/dist/aos.css$': 'identity-obj-proxy',
+    '\\.(png|jpg|jpeg|gif|webp|svg)$': '',
   },
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

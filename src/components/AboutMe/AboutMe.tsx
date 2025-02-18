@@ -41,7 +41,7 @@ export function AboutMe() {
           theme === 'dark' ? 'text-gray-opacity' : 'text-slate-700'
         }`}
       >
-        <p>
+        <p data-testid="text-about-me">
           Minha jornada na programação começou aos 14 anos, quando tive meu
           primeiro contato com robótica e Arduino. Lembro perfeitamente do
           momento em que fiz um pequeno robô se mover – foi ali que meus olhos

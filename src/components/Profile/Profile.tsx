@@ -74,13 +74,18 @@ export function Profile() {
             rel="noopener noreferrer"
             className="transform hover:scale-110 transition-transform"
           >
-            <FaLinkedin className="text-blue-500" size={40} />
+            <FaLinkedin
+              className="text-blue-500"
+              size={40}
+              data-testid="linkedin-icon"
+            />
           </a>
           <a
             href="https://www.github.com/Murillou"
             target="_blank"
             rel="noopener noreferrer"
             className="transform hover:scale-110 transition-transform"
+            data-testid="github-icon"
           >
             <FaGithub size={40} />
           </a>

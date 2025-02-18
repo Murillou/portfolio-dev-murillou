@@ -9,7 +9,11 @@ export function ThemeSwitcher() {
       onClick={toggleTheme}
       className="ml-4 p-2 rounded-full bg-light-muted dark:bg-dark-muted text-light-text dark:text-dark-text transition-transform duration-300 ease-in-out transform hover:scale-110"
     >
-      {theme === 'light' ? <RiMoonClearLine /> : <RiSunLine />}
+      {theme === 'light' ? (
+        <RiMoonClearLine data-testid="moon-icon" />
+      ) : (
+        <RiSunLine data-testid="sun-icon" />
+      )}
     </button>
   );
 }

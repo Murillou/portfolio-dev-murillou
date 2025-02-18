@@ -92,6 +92,8 @@ const config: Config = {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
+    '\\.css$': 'identity-obj-proxy',
+    '^aos/dist/aos.css$': 'identity-obj-proxy',
   },
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -118,7 +120,7 @@ const config: Config = {
   // resetModules: false,
 
   // A path to a custom resolver
-  // resolver: undefined,
+  resolver: undefined,
 
   // Automatically restore mock state and implementation before every test
   // restoreMocks: false,
@@ -164,9 +166,7 @@ const config: Config = {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  // testPathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  testPathIgnorePatterns: ['/node_modules/'],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
@@ -180,7 +180,7 @@ const config: Config = {
   // A map from regular expressions to paths to transformers
   transform: {
     '^.+\\.(t|j)sx?$': [
-      '@swc/jest',
+      '@swc/jest', // Usando o SWC para transformar TypeScript e JSX
       {
         jsc: {
           parser: {
@@ -188,18 +188,13 @@ const config: Config = {
             tsx: true,
             decorators: true,
           },
-          keepClassNames: true,
           transform: {
             legacyDecorator: true,
             decoratorMetadata: true,
             react: {
-              runtime: 'automatic',
+              runtime: 'automatic', // Para usar o React 17 JSX Transform
             },
           },
-        },
-        module: {
-          type: 'es6',
-          noInterop: false,
         },
       },
     ],

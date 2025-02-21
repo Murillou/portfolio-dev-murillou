@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { BiCodeAlt } from 'react-icons/bi';
 import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
 import { useTheme } from '@/context/ThemeContext';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 interface HeaderProps {
   scrollToSection: (id: string) => void;
@@ -17,20 +15,9 @@ export function Header({ scrollToSection }: HeaderProps) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: false,
-    });
-  }, []);
-
   return (
     <>
-      <header
-        className="flex flex-col justify-around  items-center font-poppins p-5 max-w-7xl mx-auto md:flex-row lg:justify-between relative"
-        data-aos="fade-down"
-      >
+      <header className="flex flex-col justify-around  items-center font-poppins p-5 max-w-7xl mx-auto md:flex-row lg:justify-between relative">
         <div className="flex justify-between items-center w-full md:w-auto">
           <div className="flex items-center text-sm sm:text-2xl font-mono ">
             <BiCodeAlt size={50} className="text-green-500" />{' '}

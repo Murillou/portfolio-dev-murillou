@@ -94,7 +94,7 @@ const config: Config = {
     '^@/(.*)$': '<rootDir>/src/$1',
     '\\.css$': 'identity-obj-proxy',
     '^aos/dist/aos.css$': 'identity-obj-proxy',
-    '\\.(png|jpg|jpeg|gif|webp|svg)$': '',
+    '\\.(png|jpg|jpeg|gif|webp|svg)$': '<rootDir>/__mocks__/fileMock.js',
   },
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -181,7 +181,7 @@ const config: Config = {
   // A map from regular expressions to paths to transformers
   transform: {
     '^.+\\.(t|j)sx?$': [
-      '@swc/jest', // Usando o SWC para transformar TypeScript e JSX
+      '@swc/jest',
       {
         jsc: {
           parser: {
@@ -193,7 +193,7 @@ const config: Config = {
             legacyDecorator: true,
             decoratorMetadata: true,
             react: {
-              runtime: 'automatic', // Para usar o React 17 JSX Transform
+              runtime: 'automatic',
             },
           },
         },

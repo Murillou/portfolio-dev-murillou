@@ -29,7 +29,7 @@ export function Header({ scrollToSection }: HeaderProps) {
     <>
       <header
         className="flex flex-col justify-around  items-center font-poppins p-5 max-w-7xl mx-auto md:flex-row lg:justify-between relative"
-        data-aos="fade-up"
+        data-aos="fade-down"
       >
         <div className="flex justify-between items-center w-full md:w-auto">
           <div className="flex items-center text-sm sm:text-2xl font-mono ">

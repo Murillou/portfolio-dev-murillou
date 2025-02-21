@@ -17,4 +17,25 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  scrollbar-width: thin;
+  scrollbar-color: #888 var(--bg-color);
+}
+
+@layer components {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }

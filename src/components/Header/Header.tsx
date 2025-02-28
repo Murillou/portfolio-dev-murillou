@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BiCodeAlt } from 'react-icons/bi';
 import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
 import { useTheme } from '@/context/ThemeContext';
+import { List, X } from 'phosphor-react';
 
 interface HeaderProps {
   scrollToSection: (id: string) => void;
@@ -35,20 +36,7 @@ export function Header({ scrollToSection }: HeaderProps) {
               <ThemeSwitcher />
             </div>
             <button className="md:hidden" onClick={toggleMenu}>
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
+              <List size={28} />
             </button>
           </div>
         </div>
@@ -61,21 +49,9 @@ export function Header({ scrollToSection }: HeaderProps) {
             }`}
           >
             <button className="self-end md:hidden" onClick={toggleMenu}>
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
+              <X size={24} />
             </button>
+
             <li
               className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 ${
                 theme === 'dark'

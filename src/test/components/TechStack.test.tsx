@@ -1,5 +1,5 @@
 import { TechStack } from '@/components/TechStack/TechStack';
-import { techStack } from '@/data/teckStack';
+import { techStack } from '@/data/techStack';
 import { render, screen } from '@testing-library/react';
 
 describe('Tech Stack componente', () => {

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useTheme } from '@/context/ThemeContext';
-import { techStack } from '@/data/teckStack';
+import { techStack } from '@/data/techStack';
 
 export function TechStack() {
   const { theme } = useTheme();

@@ -17,7 +17,7 @@ export function AboutMe() {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center gap-10 max-w-7xl mx-auto text-white pt-24 font-poppins"
+      className="flex flex-col items-center justify-center gap-5 max-w-7xl mx-auto text-white pt-24 font-poppins"
       data-aos="fade-up"
     >
       <h1
@@ -28,16 +28,8 @@ export function AboutMe() {
         Sobre mim
       </h1>
 
-      <h1
-        className={`font-mono text-center text-2xl ${
-          theme === 'dark' ? 'text-gray-opacity' : 'text-slate-700'
-        }`}
-      >
-        Quem é Murillo Vinícius?
-      </h1>
-
       <div
-        className={`max-w-5xl p-3 text-center text-md sm:text-lg space-y-3 ${
+        className={`max-w-5xl p-3 text-center text-sm sm:text-lg space-y-3 ${
           theme === 'dark' ? 'text-gray-opacity' : 'text-slate-700'
         }`}
       >

@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect, useState } from 'react';
 import { BiCodeAlt } from 'react-icons/bi';
 import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
 import { useTheme } from '@/context/ThemeContext';
@@ -12,9 +14,20 @@ export function Header({ scrollToSection }: HeaderProps) {
   const { theme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in-out',
+      once: false,
+    });
+  }, []);
+
   return (
     <header className="flex flex-col justify-around items-center font-poppins p-5 max-w-7xl mx-auto md:flex-row lg:justify-between relative">
-      <div className="flex justify-between items-center w-full md:w-auto">
+      <div
+        data-aos="fade-up"
+        className="flex justify-between items-center w-full md:w-auto"
+      >
         <div className="flex items-center text-sm sm:text-2xl font-mono ">
           <BiCodeAlt size={50} className="text-green-500" />{' '}
           <span className="text-green-400 font-extrabold">Dev</span>
@@ -34,7 +47,10 @@ export function Header({ scrollToSection }: HeaderProps) {
         </div>
       </div>
 
-      <section className="hidden md:flex flex-row items-center">
+      <section
+        data-aos="fade-up"
+        className="hidden md:flex flex-row items-center"
+      >
         <ul className="flex flex-row gap-5">
           <li
             className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105  ${

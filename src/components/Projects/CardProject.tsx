@@ -45,7 +45,7 @@ export function CardProject({
           onClick={onClick}
         >
           <div className="text-center text-white px-6">
-            <p className="text-lg font-bold">{description}</p>
+            <p className="text-sm sm:text-lg font-bold">{description}</p>
             <div className="flex justify-center mt-2 space-x-2">
               {languages.map((language, index) => (
                 <div
@@ -64,7 +64,7 @@ export function CardProject({
         </div>
       </div>
 
-      <div className="flex items-center justify-center space-x-10 mt-2 p-5">
+      <div className="flex items-center justify-center space-x-10 mt-2 p-5 text-sm sm:text-base">
         <a
           href={repository}
           target="_blank"
@@ -97,7 +97,7 @@ export function CardProject({
           `}
         >
           <GoLinkExternal className="inline-block mr-2" />
-          Deploy
+          Ver projeto
         </a>
       </div>
     </section>

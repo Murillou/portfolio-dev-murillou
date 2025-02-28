@@ -18,15 +18,15 @@ export function Profile() {
   return (
     <main
       className="flex flex-col items-center justify-around gap-5 font-poppins p-5 max-w-7xl mx-auto md:flex-row md:gap-0"
-      data-aos="zoom-in-right"
+      data-aos="zoom-in"
     >
       <section className="flex flex-col items-center md:items-start">
         <div className="relative p-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-full">
           <Image
-            className="rounded-full w-56 md:w-72 lg:w-96 transform transition-transform duration-500 hover:scale-110 hover:rotate-2 cursor-pointer"
+            className="rounded-full w-56 md:w-72 lg:w-96 transform transition-transform duration-500 hover:scale-110 hover:rotate-2"
             src="/avatar.png"
             alt="Murillo Vinícius"
-            width={720}
+            width={1000}
             height={100}
           />
         </div>

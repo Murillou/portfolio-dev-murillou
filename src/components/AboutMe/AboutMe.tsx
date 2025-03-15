@@ -34,11 +34,11 @@ export function AboutMe() {
         }`}
       >
         <p data-testid="text-about-me">
-          Minha jornada na programação começou aos 14 anos, quando tive meu
-          primeiro contato com robótica e Arduino. Lembro perfeitamente do
-          momento em que fiz um pequeno robô se mover – foi ali que meus olhos
-          brilharam e descobri minha paixão pelo desenvolvimento. Desde então,
-          venho me aprimorando para transformar essa paixão em profissão.
+          Comecei minha jornada na programação aos 14 anos, quando tive meu
+          primeiro contato com robótica e Arduino. Lembro até hoje do momento em
+          que consegui fazer um robô se mover – foi ali que meus olhos brilharam
+          e descobri minha paixão como programador. Desde então, decidi que o
+          que eu queria para a minha vida é ser um desenvolvedor profissional.
         </p>
         <p>
           No meu tempo livre, gosto de ler mangás clássicos, tocar guitarra e me
